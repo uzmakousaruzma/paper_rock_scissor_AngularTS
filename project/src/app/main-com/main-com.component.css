@@ -1,0 +1,56 @@
+.main_btn{
+  margin-top: 50px;
+  height:400px;
+  width: 400px;
+  border-radius: 50%;
+  font-size: 50px;
+
+}
+.appear{
+  margin:50px;
+  background-color: orange;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+.human{
+  margin:10px;
+  height:100px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border:solid 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.human:hover{
+  border: solid 5px rgb(89, 88, 88);
+  background-image: linear-gradient(rgb(219, 187, 161),rgb(219, 125, 18));
+}
+.mar{
+  margin-left: 8px;
+  height: 40px;
+  width: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+  background-color:rgb(177, 171, 171) ;
+}
+.main_box{
+  border: solid 5px black;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 5%;
+  background-image: linear-gradient(#EFBC9B,#FFAF45);
+  height: 580px;
+
+}
+.game_vid{
+  border: solid 2px;
+  height: 320px;
+  border-radius: 3%;
+  margin-top: 70px;
+  padding: 10px;
+}
+.img{
+  border-radius: 50%;
+}

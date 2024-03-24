@@ -1,0 +1,82 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center">
+      <button [hidden]="start_but" class="btn btn-warning main_btn" (click)="start_game()">Start Game</button>
+    <div [hidden]="!start_but" ><h1 class="appear">Welcome To The Game</h1>
+      <div class="container"
+      >
+        <div class="row">
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-12 bg-secondary mar">HUMAN SELECTION</div>
+            </div>
+
+            <button  (click)="paper()" class="btn btn-warning human">paper</button><br><br>
+            <button   (click)="rock()" class="btn btn-warning human">Rock</button><br><br>
+            <button (click)="sci()" class="btn btn-warning human">scissor</button>
+
+
+          </div>
+          <div class="col-md-6 main_box text-center" >
+              <div class="row">
+
+                <div class="col-6 game_vid"><h4>HUMAN</h4>
+                  <img [src]="l_img_url" height="250px" class="img">
+
+
+                </div>
+                <div class="col-6 game_vid"><h4>MACHINE</h4>
+
+                  <img [src]="r_img_url" height="250px" class="img">
+
+                </div>
+              </div>
+              <!--mathch no row-->
+              <div class="row">
+                <div class="col-12"><h4>MATCH NUMBER:<span style="color:rgb(238, 7, 7);">{{t_match}}</span></h4></div>
+              </div>
+              <!--score-->
+              <div class="row">
+                <div class="col-6">
+                  <h4>HUMAN</h4>
+                  <hr style="border:solid 2px;">
+                  <h6>WIN:{{h_win}} score</h6>
+                  <h6>DRAW:{{h_draw}}</h6>
+                  <h6>LOSS:{{h_loss}} matches</h6>
+
+                </div>
+                <div class="col-6"><h4>MACHINE</h4>
+                  <hr style="border:solid 2px;">
+                  <h6>WIN:{{m_win}} score</h6>
+                  <h6>DRAW:{{m_draw}}</h6>
+                  <h6>LOSS:{{m_loss}} matches</h6>
+
+                </div>
+              </div>
+
+
+
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-12 bg-secondary mar">MACHINE SELECTION
+
+              </div>
+            </div>
+
+
+            <button class="btn btn-warning human"  [hidden]="but_pap">paper</button><br><br>
+            <button class="btn btn-warning human" [hidden]="but_roc">Rock</button><br><br>
+            <button class="btn btn-warning human" [hidden]="but_sci">scissor</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
